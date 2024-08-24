@@ -14,3 +14,7 @@ const promesse = fetch(url, [options]);
 `options` : objet qui représente les options que l'on vient passer
 
 La méthode `fetch()` retourne une promesse qui sera tenu si le serveur répond. Cette promesse est résolue avec un objet `Response`
+
+[[POST]]
+[[GET]]
+[[PATCH]]
