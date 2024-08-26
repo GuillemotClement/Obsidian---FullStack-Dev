@@ -4,51 +4,111 @@
     "type": "split",
     "children": [
       {
-        "id": "bf66e4b096f5a077",
+        "id": "76c3767185b53387",
         "type": "tabs",
         "children": [
           {
-            "id": "a4c1c88835c6d3ab",
+            "id": "3caf0dcce4ca752b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "POST.md",
+                "file": "DELETE.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "444c98c849ea9c35",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "39edaae8b91fd5ca",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "677f2ec26e62996e",
+            "id": "2a1540aad7026f87",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PATCH.md",
+                "file": "LARAVEL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4790d143996ee0db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "API Rest Symfony.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0a6d827de3a3e972",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Atomic Design.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7fd39202c983c291",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ternaire en React.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4719e4ade47f2b0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "16bcaab6d44d9e3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seed data & gestion de chargement.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6d57d943482ed3a8",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "e1f5763f32b933f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Récupération des données et context.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -114,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PATCH.md",
+                "file": "Récupération des données et context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PATCH.md",
+                "file": "Récupération des données et context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PATCH.md"
+                "file": "Récupération des données et context.md"
               }
             }
           }
@@ -175,14 +235,25 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "677f2ec26e62996e",
+  "active": "e1f5763f32b933f3",
   "lastOpenFiles": [
+    "Projet CookChef.md",
+    "Récupération des données et context.md",
+    "Seed data & gestion de chargement.md",
+    "Structure d'un projet.md",
+    "Pasted image 20240826124526.png",
+    "Ternaire en React.md",
+    "Atomic Design.md",
+    "API Rest Symfony.md",
+    "SYMFONY.md",
+    "LARAVEL.md",
+    "DELETE.md",
     "Requête AJAX.md",
+    "POST.md",
     "PATCH.md",
     "React.md",
     "Hook.md",
     "GET.md",
-    "POST.md",
     "useEffect().md",
     "SPA.md"
   ]

@@ -18,3 +18,4 @@ La méthode `fetch()` retourne une promesse qui sera tenu si le serveur répond.
 [[POST]]
 [[GET]]
 [[PATCH]]
+[[DELETE]]
