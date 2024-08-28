@@ -16,3 +16,7 @@ Dans ce projet fil rouge, on vient mettre en application les différentes notion
 [[Seed data & gestion de chargement]]
 
 [[Récupération des données et context]]
+
+[[Persistance de la wishlist]]
+
+[[Mise en place de la pagination]]
