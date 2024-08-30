@@ -1,6 +1,9 @@
 ---
 created: 2024-08-27T18:48
 updated: 2024-08-30T12:39
+tags:
+  - React
+  - Formulaire
 ---
 ---
 ```table-of-contents
@@ -553,3 +556,44 @@ De la même façon, on pourras définir une fonction de rappel lorsque l'on vien
 ```
 
 Ici, on viens déclencher la fonction lorsqu'on vient saisir de la données dans le input.
+
+## Comportement de validation par défaut
+
+Il sera possible de venir modifier le comportement de validation par défaut.
+
+Par défaut, pour valider un champ, il faut au préalable le soumettre. On viens ensuite appliquer la règle.
+
+On viens dans le `useForm` modifier le mode :
+
+```javascript 
+  const {
+    register,
+    handleSubmit,
+    getValues,
+    watch,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      //on passe 'Jean' en valeur par défaut au champ name
+      name: "",
+    },
+    mode: "onBlur",
+  });
+```
+
+
+Il existe plusieurs mode de validation différents :
+- onBlur: la validation se fait dès que l'user clique en dehors du champs
+- onChange : la validation se déclenche dès que l'on saisis quelquechose 
+- onSubmit : par défaut
+- onTouched : dès que l'on vient toucher l'input
+- all : déclenche la validation tout le temps
+
+## Register()
+
+[[register()]]
+
+## useForm()
+
+[[useForm()]]
+

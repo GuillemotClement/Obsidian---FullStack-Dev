@@ -7,10 +7,10 @@
   "find-unlinked-files",
   "key-promoter",
   "obsidian-local-images",
-  "metadata-menu",
   "omnisearch",
   "obsidian-statusbar-pomo",
   "typing-speed",
   "obsidian-vault-statistics-plugin",
-  "templater-obsidian"
+  "templater-obsidian",
+  "metaedit"
 ]

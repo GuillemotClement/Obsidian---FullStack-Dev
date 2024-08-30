@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "0ac1aff4c6da9b0a",
+        "id": "8e77624e397c0f01",
         "type": "tabs",
         "children": [
           {
-            "id": "752f6f60fecae88b",
+            "id": "b14a7d68234528dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Formulaire/Création de formulaire.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7822654c928e4e86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "useForm().md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#React",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "useForm().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "useForm().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,17 +143,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "useForm().md"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,13 +170,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7822654c928e4e86",
+  "active": "b14a7d68234528dd",
   "lastOpenFiles": [
     "React/Formulaire/Création de formulaire.md",
+    "useForm().md",
+    "register().md",
+    "React/Formulaire/Gestion de formulaire.md",
     "conflict-files-obsidian-git.md",
     "HubRun",
     "React/Formulaire/handleSubmit().md",
-    "React/Formulaire/Gestion de formulaire.md",
     "Templates/Template.md",
     "Test de mort.md",
     "Test.md",
@@ -216,8 +203,6 @@
     "React/Requête AJAX.md",
     "WorkFlow.md",
     "React/Structure d'un projet.md",
-    "Sans titre 1.md",
-    "React/Ternaire en React.md",
     "Goland",
     "JavaScript",
     "Laravel",
