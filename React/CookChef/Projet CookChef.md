@@ -1,4 +1,4 @@
-[[React]]
+[[React/React]]
 
 ---
 Projet cookchef est réaliser pendant la formation Dyma.

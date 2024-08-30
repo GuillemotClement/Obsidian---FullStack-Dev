@@ -1,7 +1,7 @@
 {
   "openViewOnStart": true,
   "ribbonIcon": true,
-  "showRootFolder": true,
+  "showRootFolder": false,
   "showFilesFromSubFolders": true,
   "searchFunction": true,
   "allSearchOnlyInFocusedFolder": false,
@@ -10,7 +10,7 @@
   "excludedExtensions": "",
   "hideAttachments": false,
   "attachmentsFolderName": "attachments",
-  "folderIcon": "default",
+  "folderIcon": "typicon",
   "folderCount": true,
   "folderCountOption": "notes",
   "evernoteView": "Vertical",

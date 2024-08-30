@@ -1,18 +1,16 @@
 [
-  "obsidian-git",
-  "code-styler",
-  "obsidian-statusbar-pomo",
-  "file-tree-alternative",
   "code-emitter",
+  "obsidian-git",
+  "automatic-table-of-contents",
   "file-explorer-note-count",
+  "file-tree-alternative",
   "find-unlinked-files",
-  "heatmap-calendar",
-  "highlightr-plugin",
   "key-promoter",
   "obsidian-local-images",
+  "metadata-menu",
   "omnisearch",
-  "templater-obsidian",
+  "obsidian-statusbar-pomo",
   "typing-speed",
-  "update-time-on-edit",
-  "obsidian-vault-statistics-plugin"
+  "obsidian-vault-statistics-plugin",
+  "templater-obsidian"
 ]

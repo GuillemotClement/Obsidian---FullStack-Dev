@@ -2,6 +2,9 @@
 created: 2024-08-27T18:48
 updated: 2024-08-30T12:39
 ---
+---
+```table-of-contents
+```
 La librairie React-hook-form à créer un hook qui permet une gestion de formulaire simplifié. Avec son hook, on pourras facilement venir gérer le formulaire.
 
 Lorsque l'on vient utiliser une balise `label` avec React, on viendras utiliser l'attribut `htmlFor=""` pour venir binder un  label avec un input. 
@@ -56,6 +59,9 @@ Ici, on as l'input name que l'on souhaite lier au formulaire.
 
 Cette propriété permet de configurer la méthode qui sera appelé lorsque l'on viendras cliquer sur le bouton de validation.
 Cela permet de récupérer les valeur stocké dans les formulaires.
+
+[[handleSubmit()]]
+
 ### getValues
 
 Permet de récupérer les valeurs actuel du formulaire pour le rendu du composant
@@ -68,8 +74,15 @@ On viens commence par venir récupérer les fonctions `register`, `handleSubmit`
 const { register, handleSubmit } = useForm();
 ```
 
+## submit()
+
+Par convention, on viendras créer une fonction submit pour la gestion de la soumission du formulaire.
+On passeras cette fonction à la méthode `handleSubmit()`
+
 On vient ensuite préparer une fonction pour gérer la soumission du formulaire. 
 Dans cette fonction, on passe en paramètres les valeurs du formulaire.
+
+Cette fonction ne sera exécuté que si le formulaire est validé.
 
 ```javascript
 function submit(value){
@@ -400,8 +413,143 @@ Pour que le test passe, on viens simplement retourner `true`
 	},
 	validate(value) {
 	  if (value === "Jean") {
-		return true;
+			return true;
+	  }else{
+			return false;
 	  }
 	},
 })}
 ```
+
+### Récupérer la valeur d'un autre input
+
+Cette fonctionnalité est utile dans le cas ou l'on souhaite faire une confirmation de mot de passe pour une inscription d'un nouvel utilisateur.
+
+Pour cela on viendras utiliser la fonction `getValues()`, ou l'on indique le nom du champ que l'on souhaite en paramètre.
+On viens ensuite comparer les deux valeurs
+
+```javascript
+{...register("name", 
+	{ minLength: {
+		value: 2, 
+		message: "Trop court", 
+	}, 
+	validate(value) { 
+		getValue("confirm);
+		if (value === "Jean") {
+			return true;
+		}else{ 
+			return false; 
+		} 
+	}, 
+})}
+```
+
+### valueAsNumber
+
+Cette clé placé sur `register` permet de convertir la saisis d'un utilisateur en number.
+
+Par défaut, le formulaire ne retourne que des string.
+
+```javascript 
+<input
+  type="number"
+  className="mt-2 rounded-lg border-2"
+  id="age"
+  {...register("name", {
+	valueAsNumber: true,
+  })}
+/>
+```
+
+### valueAsDate
+
+De la même manière, on pourras utiliser cette clé pour convertir la valeur en format `Date`
+
+```javascript
+<input
+  type="number"
+  className="mt-2 rounded-lg border-2"
+  id="age"
+  {...register("name", {
+   valueAsDate: true,
+  })}
+/>
+```
+
+### setValueAs
+
+Permet d'utiliser une fonction qui va prendre la valeur, et on pourras retourner ce que l'on souhaite :
+
+```javascript
+<input
+  type="number"
+  className="mt-2 rounded-lg border-2"
+  id="age"
+  {...register("name", {
+	setValueAs(x) {
+	  return "Salut";
+	},
+  })}
+/>
+```
+
+Dans l'exemple, il considère que la valeur de `x` est `Salut`.
+
+### onBlur
+
+Permet de définir des fonction de callback pour cet effet. 
+
+Par exemple, dans le cas ou l'on souhaite faire un effet particulier pour le `onBlur`
+
+```javascript
+<input
+
+              type="number"
+
+              className="mt-2 rounded-lg border-2"
+
+              id="age"
+
+              {...register("name", {
+
+                onBlur(e) {
+
+                  console.log("Blur");
+
+                },
+
+              })}
+
+            />
+```
+
+Ici, on déclenche l'effet lorsque l'on clique en dehors du formulaire.
+
+### onChange
+
+De la même façon, on pourras définir une fonction de rappel lorsque l'on viens saisir de la donnée dans le input 
+
+```javascript 
+<input
+
+              type="number"
+
+              className="mt-2 rounded-lg border-2"
+
+              id="age"
+
+              {...register("name", {
+
+                onChange(e) {
+
+                  console.log("Change");
+
+                },
+
+              })}
+
+            />
+```
+
+Ici, on viens déclencher la fonction lorsqu'on vient saisir de la données dans le input.

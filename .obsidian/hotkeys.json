@@ -4,10 +4,11 @@
       "modifiers": [
         "Mod"
       ],
-      "key": "O"
+      "key": "L"
     }
   ],
-  "obsidian-git:push2": [
+  "switcher:open": [],
+  "command-palette:open": [
     {
       "modifiers": [
         "Mod"
@@ -15,6 +16,22 @@
       "key": "P"
     }
   ],
-  "switcher:open": [],
-  "command-palette:open": []
+  "obsidian-git:push2": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
+  "editor:toggle-checklist-status": [],
+  "automatic-table-of-contents:insert-automatic-table-of-contents": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "K"
+    }
+  ],
+  "editor:insert-link": []
 }

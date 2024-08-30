@@ -4,17 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "3cc47768c7d6c0d3",
+        "id": "0ac1aff4c6da9b0a",
         "type": "tabs",
         "children": [
           {
-            "id": "a0cf78d73a11b0f1",
+            "id": "752f6f60fecae88b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "React/Formulaire/Création de formulaire.md",
                 "mode": "source",
+                "backlinks": false,
                 "source": false
               }
             }
@@ -66,7 +67,15 @@
             }
           },
           {
-            "id": "bddf3f6941962ee3",
+            "id": "38321122b5b65249",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "8ee635aca63fcb87",
             "type": "leaf",
             "state": {
               "type": "file-tree-view",
@@ -74,7 +83,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -138,7 +147,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -153,41 +163,53 @@
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "omnisearch:Omnisearch": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
       "obsidian-statusbar-pomo:Start pomodoro": false,
-      "file-tree-alternative:File Tree Alternative Plugin": false
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "a0cf78d73a11b0f1",
+  "active": "8ee635aca63fcb87",
   "lastOpenFiles": [
-    "React/Formulaire/Gestion de formulaire.md",
-    "React/CookChef/Projet CookChef.md",
-    "React/CookChef",
-    "React/Formulaire",
-    "React/React.md",
-    "React",
-    "Go.md",
-    "JavaScript.md",
-    "Type de données.md",
-    "Variables.md",
-    "Déclarer une variable.md",
+    "HubRun",
+    "React/Formulaire/handleSubmit().md",
     "React/Formulaire/Création de formulaire.md",
-    "Pasted image 20240827190305.png",
-    "Hook personnalisé.md",
-    "Hook.md",
-    "React/CookChef/Mise en place de la pagination.md",
-    "Persistance de la wishlist.md",
-    "PATCH.md",
-    "React/CookChef/Récupération des données et context.md",
-    "React/CookChef/Seed data & gestion de chargement.md",
-    "Structure d'un projet.md",
-    "Pasted image 20240826124526.png",
-    "Ternaire en React.md",
-    "Atomic Design.md",
-    "API Rest Symfony.md",
-    "SYMFONY.md",
-    "LARAVEL.md",
-    "DELETE.md",
-    "Requête AJAX.md",
-    "POST.md"
+    "React/Formulaire/Gestion de formulaire.md",
+    "Templates/Template.md",
+    "Test de mort.md",
+    "Test.md",
+    "Nouvelle Note.md",
+    "test.md",
+    "React Hook.md",
+    "React et test.md",
+    "React/React.md",
+    "React/Formulaire/React.md",
+    "Symfony/Untitled.md",
+    "Templates",
+    "Symfony/API Rest Symfony.md",
+    "React/Atomic Design.md",
+    "React/GET.md",
+    "React/Hook.md",
+    "React/CookChef/Persistance de la wishlist.md",
+    "React/Pasted image 20240826124526.png",
+    "React/Pasted image 20240827190305.png",
+    "React/POST.md",
+    "Pytthon/Python.md",
+    "Pytthon",
+    "React/Requête AJAX.md",
+    "WorkFlow.md",
+    "React/Structure d'un projet.md",
+    "Sans titre 1.md",
+    "React/Ternaire en React.md",
+    "Goland",
+    "JavaScript",
+    "Laravel",
+    "Symfony",
+    "Tags",
+    "Templater/Hello",
+    "Templater",
+    "React/CookChef"
   ]
 }
