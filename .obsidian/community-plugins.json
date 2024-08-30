@@ -1,4 +1,18 @@
 [
   "obsidian-git",
-  "code-styler"
+  "code-styler",
+  "obsidian-statusbar-pomo",
+  "file-tree-alternative",
+  "code-emitter",
+  "file-explorer-note-count",
+  "find-unlinked-files",
+  "heatmap-calendar",
+  "highlightr-plugin",
+  "key-promoter",
+  "obsidian-local-images",
+  "omnisearch",
+  "templater-obsidian",
+  "typing-speed",
+  "update-time-on-edit",
+  "obsidian-vault-statistics-plugin"
 ]

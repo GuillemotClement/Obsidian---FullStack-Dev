@@ -1,0 +1,15 @@
+{
+  "showUnassigned": true,
+  "showAssigned": true,
+  "threshold": 0,
+  "notificationTimeout": 5,
+  "template": "{{commandId}} - {{commandName}} - {{hotkey}}",
+  "descriptionOfActions": false,
+  "mouseStatistics": {
+    "obsidian-git:delete-repo": 1,
+    "obsidian-git:delete-branch": 1,
+    "find-unlinked-files:delete-unlinked-files": 1,
+    "find-unlinked-files:delete-empty-files": 1
+  },
+  "keyboardStatistics": {}
+}
