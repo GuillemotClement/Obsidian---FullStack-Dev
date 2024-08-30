@@ -21,7 +21,7 @@
     "workspace:close-others": 11,
     "workspace:close-tab-group": 11,
     "workspace:close-others-tab-group": 11,
-    "find-unlinked-files:find-files-without-tags": 4,
+    "find-unlinked-files:find-files-without-tags": 5,
     "file-explorer:new-folder": 1,
     "command-palette:open": 2,
     "darlal-switcher-plus:switcher-plus:open-symbols-active": 1,
