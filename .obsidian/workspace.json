@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7822654c928e4e86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -103,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Formulaire/Création de formulaire.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Formulaire/Création de formulaire.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Formulaire/Création de formulaire.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -171,11 +185,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8ee635aca63fcb87",
+  "active": "7822654c928e4e86",
   "lastOpenFiles": [
+    "React/Formulaire/Création de formulaire.md",
+    "conflict-files-obsidian-git.md",
     "HubRun",
     "React/Formulaire/handleSubmit().md",
-    "React/Formulaire/Création de formulaire.md",
     "React/Formulaire/Gestion de formulaire.md",
     "Templates/Template.md",
     "Test de mort.md",
@@ -209,7 +224,6 @@
     "Symfony",
     "Tags",
     "Templater/Hello",
-    "Templater",
-    "React/CookChef"
+    "Templater"
   ]
 }
