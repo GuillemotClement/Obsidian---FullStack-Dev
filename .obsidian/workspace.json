@@ -106,9 +106,17 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a154866e51a84e45",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -158,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e3ba95a81ee4eb34",
@@ -174,7 +183,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Création de formulaire.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +199,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Création de formulaire.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,9 +220,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Création de formulaire.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -235,11 +240,15 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "e1f5763f32b933f3",
+  "active": "a154866e51a84e45",
   "lastOpenFiles": [
+    "JavaScript.md",
+    "Type de données.md",
+    "Variables.md",
+    "Déclarer une variable.md",
+    "Création de formulaire.md",
     "Pasted image 20240827190305.png",
     "Gestion de formulaire.md",
-    "Création de formulaire.md",
     "React.md",
     "Hook personnalisé.md",
     "Hook.md",
@@ -260,7 +269,6 @@
     "Requête AJAX.md",
     "POST.md",
     "GET.md",
-    "useEffect().md",
-    "SPA.md"
+    "useEffect().md"
   ]
 }

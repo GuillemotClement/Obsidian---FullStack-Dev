@@ -195,3 +195,71 @@ export default function App() {
 ```
 
 On pourras passer à cette méthode le nom d'un champ. Le composant sera reconstruit uniquement si la valeur dans l'input passé est modifié.
+
+## Option de register() & useForm()
+
+On pourras passer un objet de configuration dans le `useForm()`. 
+
+### defaultValues
+
+On pourras le passer en paramètre de l'objet. 
+
+On pourras y indiquer le nom des champs du formulaire et définir une valeur par défaut.
+
+```javascript
+const { register, handleSubmit, getValues, watch } = useForm({
+    defaultValues: {
+      //on passe 'Jean' en valeur par défaut au champ name
+      name: "Jean",
+    },
+  });
+```
+
+Ce mécanisme sera très utile dans le cas ou on viens réaliser des mise à jours de quelque chose qui existe déjà.
+Par exemple, on as une recette, et on viens préremplir le formulaire avec les différentes données de la recette. De cette manière l'utilisateur pourras venir réaliser des mise à jours de la recette.
+
+L'ajout de valeur par défaut est une bonne pratique. On viendras toujours le réaliser.
+Cela permet d'obtenir une vue rapide du contenu du formulaire et on as toujours des valeurs dans les champs.
+
+Dans le cas ou il n'y a pas de valeur, on indique une chaîne vite 
+
+```javascript
+const { register, handleSubmit, getValues, watch } = useForm({
+    defaultValues: {
+      //on passe 'Jean' en valeur par défaut au champ name
+      name: "",
+    },
+  });
+  
+```
+
+### Paramètre de register
+
+On pourras venir passer des paramètres dans le register. On pourras venir ajouter des éléments de validation basique.
+Ce sont les éléments de validation de HTML.
+
+```javascript
+<input
+  type="text"
+  className="mt-2 rounded-lg border-2"
+  id="name"
+  {...register("name", {
+	disabled: true,
+  })}
+```
+
+On pourras venir les personnalisés.
+
+On retrouve les éléments :
+- deeps: permet d'indiquer des dépendances
+- disabled: permet de désactiver un champ, l'utilisateur ne pourras plus cliquer sur l'input.
+- max, min : lorsque l'on vient manipuler des nombres
+- maxLength & minLength : vérifie la longueur de la chaîne de caractère dans l'input. On viens lui passer une valeur.
+
+## Vérifier si il y a une erreur dans le formulaire
+
+Pour cela, on viens récupérer la méthode `formState` depuis le hook. Cette méthode retourne un objet.
+
+On pourras voir si un input à été toucher, si une erreur est présente depuis l'objet retourner par la méthode.
+
+*minute 5 de la vidéo dyma -> options de register() & useForm()*
