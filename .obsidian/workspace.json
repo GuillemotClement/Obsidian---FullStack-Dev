@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8e77624e397c0f01",
+        "id": "466381d5a371c916",
         "type": "tabs",
         "children": [
           {
-            "id": "b14a7d68234528dd",
+            "id": "7d06d16cfa2655ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Formulaire/Validation avec Yup.md",
+                "file": "Gestion soumission du formulaire.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -82,8 +82,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -103,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Formulaire/Validation avec Yup.md",
+                "file": "Gestion soumission du formulaire.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Formulaire/Validation avec Yup.md",
+                "file": "Gestion soumission du formulaire.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +132,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -143,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Formulaire/Validation avec Yup.md"
+                "file": "Gestion soumission du formulaire.md"
               }
             }
           }
@@ -164,19 +163,19 @@
       "command-palette:Ouvrir la palette de commandes": false,
       "file-tree-alternative:File Tree Alternative Plugin": false,
       "omnisearch:Omnisearch": false,
-      "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false,
       "obsidian-statusbar-pomo:Start pomodoro": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b14a7d68234528dd",
+  "active": "7d06d16cfa2655ab",
   "lastOpenFiles": [
-    "useForm().md",
-    "React/Formulaire/Validation avec Yup.md",
     "React/Formulaire/Création de formulaire.md",
-    "register().md",
     "React/Formulaire/Gestion de formulaire.md",
+    "React/Formulaire/Validation avec Yup.md",
+    "Utilisation checkbox, radio, select, structure du formulaire.md",
+    "Gestion soumission du formulaire.md",
+    "useForm().md",
+    "register().md",
     "conflict-files-obsidian-git.md",
     "HubRun",
     "React/Formulaire/handleSubmit().md",
@@ -201,8 +200,6 @@
     "React/POST.md",
     "Pytthon/Python.md",
     "Pytthon",
-    "React/Requête AJAX.md",
-    "WorkFlow.md",
     "Goland",
     "JavaScript",
     "Laravel",
