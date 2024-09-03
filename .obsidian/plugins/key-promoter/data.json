@@ -37,7 +37,7 @@
     "workspace:show-trash": 1,
     "app:show-release-notes": 1,
     "app:show-debug-info": 1,
-    "open-with-default-app:show": 1,
+    "open-with-default-app:show": 2,
     "editor:clear-formatting": 1,
     "editor:context-menu": 1,
     "file-explorer:open": 1,
@@ -46,13 +46,16 @@
     "outgoing-links:open": 1,
     "tag-pane:open": 1,
     "bookmarks:open": 1,
-    "markdown:clear-metadata-properties": 2,
+    "markdown:clear-metadata-properties": 3,
     "editor:set-heading-1": 1,
     "editor:set-heading-2": 1,
     "editor:set-heading-3": 1,
     "editor:set-heading-4": 1,
     "editor:set-heading-5": 1,
-    "editor:set-heading-6": 1
+    "editor:set-heading-6": 1,
+    "markdown:add-metadata-property": 1,
+    "markdown:edit-metadata-property": 1,
+    "editor:toggle-fold-properties": 1
   },
   "keyboardStatistics": {}
 }

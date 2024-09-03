@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Navigation avec React Router.md",
+                "file": "React/ReactRouter/Navigation avec React Router.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -65,7 +65,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "String.md",
+                "file": "React/ReactRouter/Navigation avec React Router.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -135,12 +135,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e3ba95a81ee4eb34",
@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "String.md",
+                "file": "React/ReactRouter/Navigation avec React Router.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "String.md",
+                "file": "React/ReactRouter/Navigation avec React Router.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "String.md"
+                "file": "React/ReactRouter/Navigation avec React Router.md"
               }
             }
           }
@@ -205,7 +205,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,10 +222,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b6383da0b0cf934b",
+  "active": "830bf9e0a363c9e1",
   "lastOpenFiles": [
-    "Navigation avec React Router.md",
+    "Pasted image 20240903162221.png",
     "String.md",
+    "React/ReactRouter/Navigation avec React Router.md",
     "Composant Suspense.md",
     "React/ReactRouter",
     "React/Fonctionnalité Concurrente/Fonctionnalité concurrent.md",
@@ -252,7 +254,6 @@
     "React/Formulaire/React.md",
     "Symfony/Untitled.md",
     "Templates",
-    "Symfony/API Rest Symfony.md",
     "React/Pasted image 20240826124526.png",
     "React/Pasted image 20240827190305.png",
     "Pytthon",
