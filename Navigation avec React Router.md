@@ -30,3 +30,17 @@ Dans le cadre d'une SPA, on ne peut pas se permettre de recharger l'application 
 
 L'utilisateur clique sur un client, le lien est ensuite intercepter par React et React utilise la librairie `React-Router` pour générer le composant.
 Etant donné que l'on ne passe pas par le serveur, il n'y a pas besoin de recharger l'application.
+
+Lorsque `React-Router` intercepte le lien, on aura la possibilité de récupérer de la données depuis le serveur. Le serveur sera utilisé uniquement pour récupérer de la données. 
+
+## Installation de la librairie 
+
+https://reactrouter.com/en/main
+
+Pour pouvoir utiliser la librairie, il faut commence par venir l'installer :
+
+`npm i react-router-dom`
+``
+
+# Système de navigation de React-Router
+

@@ -58,9 +58,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b6383da0b0cf934b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "String.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -143,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Navigation avec React Router.md",
+                "file": "String.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Navigation avec React Router.md",
+                "file": "String.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Navigation avec React Router.md"
+                "file": "String.md"
               }
             }
           }
@@ -208,10 +221,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "fda070e535b0b499",
+  "active": "b6383da0b0cf934b",
   "lastOpenFiles": [
-    "Composant Suspense.md",
     "Navigation avec React Router.md",
+    "String.md",
+    "Composant Suspense.md",
     "React/ReactRouter",
     "React/Fonctionnalité Concurrente/Fonctionnalité concurrent.md",
     "React/Formulaire/Gestion de formulaire.md",
@@ -239,7 +253,6 @@
     "Symfony/Untitled.md",
     "Templates",
     "Symfony/API Rest Symfony.md",
-    "React/Atomic Design.md",
     "React/Pasted image 20240826124526.png",
     "React/Pasted image 20240827190305.png",
     "Pytthon",
