@@ -293,3 +293,77 @@ export const router = createBrowserRouter([
 ```
 
 # useMatch, Link et navLink
+
+## useMatch
+
+La librairie fournis un hook permettant de modifier l'aspect d'un lien. On pourras lui passer un pattern en paramètre.
+
+Ici, on déclare deux constante contenant deux pattern correspondant aux deux pages de l'application.
+
+```javascript
+export default function Header() {
+  const matchHomepage = useMatch("/");
+  const matchPRofil = useMatch("/profil");
+  return (
+    <div className="flex h-11 items-center justify-between border-b px-4 shadow-lg">
+      <div className="">
+        <p>logo</p>
+      </div>
+      <ul className="flex gap-x-3">
+        <Link to="/">Accueil</Link>
+        <Link to="/profil">Profil</Link>
+      </ul>
+    </div>
+  );
+}
+```
+
+Dans le cas ou l'on match l'url ou l'on se trouve, on obtient un objet contenant les paramètre de l'URL. Dans le cas contraire, cela retourne `null`.
+
+On pourras utiliser des mécanisme avec les `if` afin de modifier l'aspect du lien dans le cas ou l'on se trouve sur la page qui correspond au pattern.
+
+## NavLink
+
+Ce composant est utilisé pour prendre en compte si un lien est actif ou non. On viens remplacer les composants `Link` par les `NavLink` 
+
+Cela vient ajouter une classe `active` sur les liens. La classe sera ajouter uniquement si on clique sur le lien.
+
+```javascript
+export default function Header() {
+  return (
+    <div className="flex h-11 items-center justify-between border-b px-4 shadow-lg">
+      <div className="">
+        <p>logo</p>
+      </div>
+      <ul className="flex gap-x-3">
+        <NavLink to="/">Accueil</NavLink>
+        <NavLink to="/profil">Profil</NavLink>
+      </ul>
+    </div>
+  );
+}
+```
+
+On pourras venir renommer la classe ajouter en passant une fonction dans le className sur ce composant
+La fonction prendras un paramètre qui retourne true dans le cas ou le lien est actif
+
+```javascript
+export default function Header() {
+  return (
+    <div className="flex h-11 items-center justify-between border-b px-4 shadow-lg">
+      <div className="">
+        <p>logo</p>
+      </div>
+      <ul className="flex gap-x-3">
+        <NavLink to="/">Accueil</NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "link-active" : "")}
+          to="/profil"
+        >
+          Profil
+        </NavLink>
+      </ul>
+    </div>
+  );
+}
+```
