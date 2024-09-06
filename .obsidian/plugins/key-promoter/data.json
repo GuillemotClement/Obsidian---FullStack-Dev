@@ -14,13 +14,13 @@
     "templater-obsidian:replace-in-file-templater": 16,
     "templater-obsidian:jump-to-next-cursor-location": 13,
     "templater-obsidian:create-new-note-from-template": 15,
-    "graph:open": 5,
+    "graph:open": 8,
     "graph:open-local": 5,
-    "workspace:close": 18,
-    "workspace:close-window": 19,
-    "workspace:close-others": 18,
-    "workspace:close-tab-group": 18,
-    "workspace:close-others-tab-group": 18,
+    "workspace:close": 22,
+    "workspace:close-window": 23,
+    "workspace:close-others": 22,
+    "workspace:close-tab-group": 22,
+    "workspace:close-others-tab-group": 22,
     "find-unlinked-files:find-files-without-tags": 13,
     "file-explorer:new-folder": 2,
     "command-palette:open": 2,
@@ -56,8 +56,9 @@
     "markdown:add-metadata-property": 1,
     "markdown:edit-metadata-property": 1,
     "editor:toggle-fold-properties": 1,
-    "workspace:undo-close-pane": 2,
-    "obsidian-git:backup-and-close": 2
+    "workspace:undo-close-pane": 6,
+    "obsidian-git:backup-and-close": 6,
+    "switcher:open": 1
   },
   "keyboardStatistics": {}
 }
