@@ -83,11 +83,12 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e3ba95a81ee4eb34",
@@ -103,7 +104,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PHP/PHP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PHP/PHP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,9 +141,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "PHP/PHP.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -169,13 +166,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c18722f6116e1afb",
+  "active": "8ee635aca63fcb87",
   "lastOpenFiles": [
+    "PHP/PHP.md",
     "Pasted image 20240906160829.png",
     "Type de données PHP.md",
     "String PHP.md",
     "String.md",
-    "PHP/PHP.md",
     "React/Formulaire/Gestion soumission du formulaire.md",
     "trigger(), setFocus() & criteriaMode.md",
     "JavaScript/Type de données.md",

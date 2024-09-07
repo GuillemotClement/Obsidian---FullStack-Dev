@@ -537,6 +537,23 @@ On pourras venir afficher plusieurs élément du tableau :
 </ul>
 ```
 
+### Parcourir un tableau dans un tableau 
+
+Dans le cas ou une clé contient un tableau, il sera très simple de parcourir chaque élément du tableau interne.
+
+```php
+$business = [
+	'name' => "Laracast",
+	'price' => 15,
+	'categories' => ['Testing', 'Javascript', 'PHP']
+];
+
+foreach($business['categories'] as $category){
+	echo $category . '<br/>';
+}
+```
+
+
 ## Fonction 
 
 ### Déclaration d'une fonction 
@@ -590,7 +607,7 @@ $author = "Frank Herbert";
 $filterBooksByAuthor = filterByAuthor($books, $author);
 ```
 
-On viens ensuite itérer sur le tableau retourné par la fonction pour afficher uniquement les autheur souhaité sur la page :
+On viens ensuite itérer sur le tableau retourné par la fonction pour afficher uniquement les auteur souhaité sur la page :
 
 ```php 
 <ul>
@@ -603,3 +620,172 @@ On viens ensuite itérer sur le tableau retourné par la fonction pour afficher 
 	<?php endforeach ?>
 </ul>
 ```
+
+#### Refacto 
+
+On pourras refactoriser la fonction de filtre pour la rendre plus générique :
+
+```php
+//$data étant le tableau de données
+//$key étant ce que l'on souhaite filtré
+//$value étant la valeur que l'on veut récupérer
+function filter($data, $key, $value){
+	$filterData = [];
+	
+	foreach($data as $item){
+		if($item[$key] === $value){
+			$filterData[] = $item;
+		}
+	}
+	
+	return $filterData;
+}
+
+$filteredBooks = filter($books, 'author', 'Asimov Isaac');
+```
+
+On peut ensuite venir traiter la données retourner dans un tableau par la fonction `filter()`
+
+
+### Fonction anonyme 
+
+On pourras utiliser des fonctions anonymes. On stocke la fonction dans une variable.
+
+On pourras venir appeler une fonctio anonyme en la passant dans ces paramètres.
+
+Avec cette fonctionnalité, on pourras rendre la fonction `filter()`encore plus générique.
+
+-> wtf faut revenir la dessus https://laracasts.com/series/php-for-beginners-2023-edition/episodes/9
+
+
+## Séparer le logique du template
+
+Pour garder une bonne organisation dans le code, on viens séparer le PHP du HTML.
+
+Dans l'exemple, on retrouve du code PHP au milieu du fichier HTML. Ceci n'est pas une bonne pratique.
+
+Pour avoir une bonne base de code qui reste maintenanble, on viendras séparer le code PHP du code HTML.
+
+### PHP et HTML
+
+La base d'une bonne séparation est de placer le code PHP (fonction, data) tout en haut du document.
+On viendras ajouter le HTML à la suite du code PHP.
+
+On conserve uniquement la partie responsable de l'affichage dans le code HTML (foreach par exemple). Ce code devra rester le plus simple possible. Toute la partie logique sera exécuté dans la partie placer en haut du document.
+
+### Fichier séparé
+
+Avec le temps, l'application viens grossir de plus en plus. Pour garder une base de code propre, on viens alors séparer le code PHP en plusieurs fichier. 
+On viens ensuite importer les fichiers au endroit ou il seront utilisé.
+
+Par exemple, pour notre exemple, on aurai un fichier contenant la logique PHP, et un fichier contenant le code HTML.
+La partie HTML est appelé `view` ou `template` généralement.
+
+Dans le cas ou le fichier ne contient que du code PHP, il n'est pas nécessaire d'ajouter la balise PHP fermante.
+
+#### Convention de nommage
+
+Pour les fichier contenant le HTML, on viens généralement appeler celui ci `name.view.php`, le `name`étant remplacé par le nom de la page correspondant.
+
+#### Importer un fichier
+
+Pour importer un fichier dans un autre fichier, on utilise le mot clé `require` ou `include`. 
+
+Si on utilise `require`, alors il est obligatoire d'avoir le fichier sinon cela provoque une erreur.
+
+Dans l'exemple, on as le fichier `index.php`qui contient toute la logique de l'application. Ici uniquement la tableau de livre, et la fonction de filtre.
+On viens ajouter sur la dernière ligne du fichier :
+```php
+require "index.view.php";
+```
+
+Cette ligne permet d'importer le fichier HTML, et ainsi d'afficher la page avec les éléments souhaité.
+
+# Dynamic Web Application
+
+## II - Page Links
+
+On pourras venir utiliser un skeleton de Tailwind UI pour aller plus vite.
+
+### Créer plusieurs pages
+
+On viens créer pour chaque nouvelle page que l'on souhaite, un nouveau fichier PHP. 
+
+Par exemple, un fichier `contact.php` et un fichier `about.php`. On viens ensuite pour ces deux pages, créer un fichier view : `contact.view.php` et `about.view.php`.
+
+Dans chacun des deux fichiers, on viens `require` le template correspondant.
+
+### Créer des liens pour naviguer
+
+Dans chaque fichier `view`, on viens coller le skeleton de tailwind pour obtenir une page correct. Dans la partie `nav`, on viens créer un lien qui pointe sur le fichier php qui correspond à la page que l'on souhaite afficher :
+
+```php 
+<div class="ml-10 flex items-baseline space-x-4">
+	<a href="/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+	<a href="./about.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About us</a>
+	<a href="./contact.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+</div>
+```
+On viens copier ce code dans chaque page de notre application.
+
+## Partials 
+
+Les partials permettent de simplifier l'écriture d'une page web. 
+
+On viens écrire le code une fois, et on viens ensuite importer le morceau de code correspondant. De cette manière, il n'y a plus besoin de dupliquer le code.
+
+### Organisation du dossier
+
+Pour garder une base de code propre, on vient réorganiser la structure du dossier.
+
+On viens créer un nouveau folder `views`qui contient les différents templates de notre application.
+
+Dans ce folder, on viens créer un sous dossier `partials`qui sera utilisé pour stocker des partie spécifique d'une page.
+
+Pour notre exemple, on viens récupérer la partie `<nav>`. On viens appeler ce fichier `nav.php`
+
+### Importer un partial 
+
+Pour importer le nouveau partial, on viens utiliser un `require`.
+
+```php
+<?php require ('partials/nav.php') ?>
+```
+
+De cette manière, on as qu'une seul fichier de code qui gère la navigation, et il n'y as pas besoin de dupliquer de code.
+
+#### Navigation dynamique
+
+Dans le cas de notre nav, on souhaite mettre en place un style dynamique selon la page sur lequel se trouve l'utilisateur.
+
+Pour cela, on viens utiliser un contrôler. Son rôle est de définir quel données sont à affiché de manière dynamique.
+
+## Superglobals & Current Page
+
+### Modifier un style pour la navigation
+
+On pourras utiliser les superglobal pour savoir si quel page on se trouve. On pourras ainsi ajouter un style particulier dans le cas ou l'on se situe sur une page.
+
+#### Afficher le contenu d'un array
+
+En PHP, on pourras venir afficher le contenu d'un tableau avec la fonction `print_r()`. 
+
+Pour l'afficher correctement, ce tableau devras être placer encore les balise `<pre>`. De cette manière on conserve le formatage pour lire plus facilement le tableau.
+
+```php 
+echo "<pre>"
+print_r($_SERVER);
+echo "</pre>"
+```
+
+On pourras également utiliser `var_dump`
+
+### Superglobal
+
+Les surperglobals sont des variables accessible depuis n'importe quel endoit de notre application.
+
+#### $_SERVER 
+
+Cet superglobal permet de récupérer des informations sur la page actuel.
+
+
